@@ -22,7 +22,7 @@ function Login() {
   return (
     <>
       <Col lg="5" md="7">
-        <Card className="bg-secondary shadow border-0">
+        {/* <Card className="bg-secondary shadow border-0">
           <CardHeader className="bg-transparent pb-5">
             <div className="text-muted text-center mt-2 mb-3">
               <small>Sign in with</small>
@@ -111,8 +111,8 @@ function Login() {
               </div>
             </Form>
           </CardBody>
-        </Card>
-        <Row className="mt-3">
+        </Card> */}
+        {/* <Row className="mt-3">
           <Col xs="6">
             <a
               className="text-light"
@@ -131,7 +131,21 @@ function Login() {
               <small>Create new account</small>
             </a>
           </Col>
+        </Row> */}
+
+        <Row>
+          <Col>
+            <Card className="py-5">
+              <Card className="mx-4 shadow-lg ">
+                <img
+                alt="..."
+                src={require("assets/img/sil1.png")}
+                />
+               </Card>
+            </Card>
+          </Col>
         </Row>
+
       </Col>
     </>
   );

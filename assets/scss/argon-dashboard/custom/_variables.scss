@@ -79,6 +79,12 @@ $green:   #2dce89 !default;
 $teal:    #11cdef !default;
 $cyan:    #2bffc6 !default;
 
+$sl-red-dark: #590202 !default;
+$sl-red-light: #A60303 !default;
+$sl-red-xlight: #D91136 !default;
+$sl-blue-dark: #022859 !default;
+$sl-blue-light: #0468BF !default;
+
 $colors: () !default;
 $colors: map-merge((
   "blue":       $blue,
@@ -95,7 +101,12 @@ $colors: map-merge((
   "gray":       $gray-600,
   "light":      $gray-400,
   "lighter":    $gray-200,
-  "gray-dark":  $gray-800
+  "gray-dark":  $gray-800,
+  "sl-red-dark": $sl-red-dark,
+  "sl-red-light": $sl-red-light,
+  "sl-red-xlight": $sl-red-xlight,
+  "sl-blue-dark": $sl-blue-dark,
+  "sl-blue-light": $sl-blue-light,
 ), $colors);
 
 $default:       #172b4d !default;

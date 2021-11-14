@@ -15,6 +15,9 @@
 	@include bg-gradient-variant(".bg-gradient-#{$color}", $value);
 }
 
+@each $color, $value in $colors {
+	@include bg-gradient2-variant(".bg-gradient2-#{$color}", $value);
+}
 
 // Background colors with transparency
 
@@ -31,6 +34,10 @@
 
 @each $color, $value in $theme-colors {
     @include bg-gradient-variant(".bg-gradient-#{$color}", $value);
+}
+
+@each $color, $value in $theme-colors {
+    @include bg-gradient2-variant(".bg-gradient2-#{$color}", $value);
 }
 
 

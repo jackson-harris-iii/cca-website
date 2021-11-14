@@ -31,6 +31,11 @@
   --gray-dark: #32325d;
   --light: #ced4da;
   --lighter: #e9ecef;
+  --sl-red-dark: #590202;
+  --sl-red-light: #A60303;
+  --sl-red-xlight: #D91136;
+  --sl-blue-dark: #022859;
+  --sl-blue-light: #0468BF;
   --primary: #5e72e4;
   --secondary: #f7fafc;
   --success: #2dce89;
@@ -10624,6 +10629,46 @@ button.bg-lighter:hover,
 button.bg-lighter:focus {
   background-color: #cbd3da !important; }
 
+.bg-sl-red-dark {
+  background-color: #590202 !important; }
+
+a.bg-sl-red-dark:hover, a.bg-sl-red-dark:focus,
+button.bg-sl-red-dark:hover,
+button.bg-sl-red-dark:focus {
+  background-color: #270101 !important; }
+
+.bg-sl-red-light {
+  background-color: #A60303 !important; }
+
+a.bg-sl-red-light:hover, a.bg-sl-red-light:focus,
+button.bg-sl-red-light:hover,
+button.bg-sl-red-light:focus {
+  background-color: #740202 !important; }
+
+.bg-sl-red-xlight {
+  background-color: #D91136 !important; }
+
+a.bg-sl-red-xlight:hover, a.bg-sl-red-xlight:focus,
+button.bg-sl-red-xlight:hover,
+button.bg-sl-red-xlight:focus {
+  background-color: #aa0d2a !important; }
+
+.bg-sl-blue-dark {
+  background-color: #022859 !important; }
+
+a.bg-sl-blue-dark:hover, a.bg-sl-blue-dark:focus,
+button.bg-sl-blue-dark:hover,
+button.bg-sl-blue-dark:focus {
+  background-color: #011227 !important; }
+
+.bg-sl-blue-light {
+  background-color: #0468BF !important; }
+
+a.bg-sl-blue-light:hover, a.bg-sl-blue-light:focus,
+button.bg-sl-blue-light:hover,
+button.bg-sl-blue-light:focus {
+  background-color: #034d8d !important; }
+
 .bg-gradient-primary {
   background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%) !important; }
 
@@ -10704,6 +10749,81 @@ button.bg-lighter:focus {
 
 .bg-gradient-lighter {
   background: linear-gradient(87deg, #e9ecef 0, #e9eaef 100%) !important; }
+
+.bg-gradient-sl-red-dark {
+  background: linear-gradient(87deg, #590202 0, #592602 100%) !important; }
+
+.bg-gradient-sl-red-light {
+  background: linear-gradient(87deg, #A60303 0, #a64703 100%) !important; }
+
+.bg-gradient-sl-red-xlight {
+  background: linear-gradient(87deg, #D91136 0, #d93f11 100%) !important; }
+
+.bg-gradient-sl-blue-dark {
+  background: linear-gradient(87deg, #022859 0, #020459 100%) !important; }
+
+.bg-gradient-sl-blue-light {
+  background: linear-gradient(87deg, #0468BF 0, #041abf 100%) !important; }
+
+.bg-gradient2-blue {
+  background: linear-gradient(87deg, #5e72e4 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-indigo {
+  background: linear-gradient(87deg, #5603ad 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-purple {
+  background: linear-gradient(87deg, #8965e0 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-pink {
+  background: linear-gradient(87deg, #f3a4b5 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-red {
+  background: linear-gradient(87deg, #f5365c 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-orange {
+  background: linear-gradient(87deg, #fb6340 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-yellow {
+  background: linear-gradient(87deg, #ffd600 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-green {
+  background: linear-gradient(87deg, #2dce89 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-teal {
+  background: linear-gradient(87deg, #11cdef 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-cyan {
+  background: linear-gradient(87deg, #2bffc6 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-white {
+  background: linear-gradient(87deg, #fff 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-gray {
+  background: linear-gradient(87deg, #8898aa 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-gray-dark {
+  background: linear-gradient(87deg, #32325d 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-light {
+  background: linear-gradient(87deg, #ced4da 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-lighter {
+  background: linear-gradient(87deg, #e9ecef 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-sl-red-dark {
+  background: linear-gradient(87deg, #590202 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-sl-red-light {
+  background: linear-gradient(87deg, #A60303 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-sl-red-xlight {
+  background: linear-gradient(87deg, #D91136 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-sl-blue-dark {
+  background: linear-gradient(87deg, #022859 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-sl-blue-light {
+  background: linear-gradient(87deg, #0468BF 0, #5e5e5e 100%) !important; }
 
 .bg-translucent-primary {
   background-color: rgba(63, 87, 223, 0.6) !important; }
@@ -10876,6 +10996,42 @@ button.section-darker:focus {
 
 .bg-gradient-darker {
   background: linear-gradient(87deg, black 0, black 100%) !important; }
+
+.bg-gradient2-primary {
+  background: linear-gradient(87deg, #5e72e4 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-secondary {
+  background: linear-gradient(87deg, #f7fafc 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-success {
+  background: linear-gradient(87deg, #2dce89 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-info {
+  background: linear-gradient(87deg, #11cdef 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-warning {
+  background: linear-gradient(87deg, #fb6340 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-danger {
+  background: linear-gradient(87deg, #f5365c 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-light {
+  background: linear-gradient(87deg, #adb5bd 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-dark {
+  background: linear-gradient(87deg, #212529 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-default {
+  background: linear-gradient(87deg, #172b4d 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-white {
+  background: linear-gradient(87deg, #fff 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-neutral {
+  background: linear-gradient(87deg, #fff 0, #5e5e5e 100%) !important; }
+
+.bg-gradient2-darker {
+  background: linear-gradient(87deg, black 0, #5e5e5e 100%) !important; }
 
 .fill-primary {
   fill: #5e72e4; }
@@ -11510,6 +11666,36 @@ a.text-light:hover, a.text-light:focus {
 
 a.text-lighter:hover, a.text-lighter:focus {
   color: #bdc6cf !important; }
+
+.text-sl-red-dark {
+  color: #590202 !important; }
+
+a.text-sl-red-dark:hover, a.text-sl-red-dark:focus {
+  color: #0e0000 !important; }
+
+.text-sl-red-light {
+  color: #A60303 !important; }
+
+a.text-sl-red-light:hover, a.text-sl-red-light:focus {
+  color: #5b0202 !important; }
+
+.text-sl-red-xlight {
+  color: #D91136 !important; }
+
+a.text-sl-red-xlight:hover, a.text-sl-red-xlight:focus {
+  color: #920b24 !important; }
+
+.text-sl-blue-dark {
+  color: #022859 !important; }
+
+a.text-sl-blue-dark:hover, a.text-sl-blue-dark:focus {
+  color: #00060e !important; }
+
+.text-sl-blue-light {
+  color: #0468BF !important; }
+
+a.text-sl-blue-light:hover, a.text-sl-blue-light:focus {
+  color: #023f74 !important; }
 
 @media (min-width: 992px) {
   .transform-perspective-right {

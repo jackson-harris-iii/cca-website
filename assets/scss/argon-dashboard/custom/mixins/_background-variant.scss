@@ -17,6 +17,12 @@
     }
 }
 
+@mixin bg-gradient2-variant($parent, $color) {
+    #{$parent} {
+        background: linear-gradient(77deg, $color 50%, #022859 100%) !important;
+    }
+}
+
 @mixin bg-translucent-variant($parent, $color) {
     #{$parent} {
         background-color: darken(rgba($color, $translucent-color-opacity), 7%) !important;
