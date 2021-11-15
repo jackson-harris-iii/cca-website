@@ -73,9 +73,9 @@ function Auth(props) {
                 </Col>
 
                 {/* Right Hero text block */}
-                <Col lg="5" md="6">
+                <Col lg="5" md="6" className="mt-4">
                   <Card className="py-5">
-                    <Card className="mx-4 shadow-lg ">
+                    <Card className="mx-4 shadow-lg">
                       {/* <img
                       alt="..."
                       src={require("assets/img/sil1.png")}
@@ -106,6 +106,7 @@ function Auth(props) {
             </svg>
           </div>
         </section>
+
       <div className="main-content container-fluid">
 
         {/* about - blue content section */}
@@ -123,6 +124,7 @@ function Auth(props) {
                   <Card className="mx-4 shadow shadow-lg ">
                     <img
                     alt="..."
+                    style={{maxHeight: "393px"}}
                     src={require("assets/img/sil2.jpeg")}
                     />
                   </Card>
@@ -181,6 +183,7 @@ function Auth(props) {
                   <Card className="mx-4 shadow shadow-lg ">
                     <img
                     alt="..."
+                    style={{maxHeight: "393px"}}
                     src={require("assets/img/sil3.jpeg")}
                     />
                   </Card>
