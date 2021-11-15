@@ -7,18 +7,18 @@ import { NavItem, NavLink, Nav, Container, Row, Col } from "reactstrap";
 function Login() {
   return (
     <>
-      <footer className="py-5">
+      <footer className="py-5 bg-darker">
         <Container>
           <Row className="align-items-center justify-content-xl-between">
             <Col xl="6">
               <div className="copyright text-center text-xl-left text-muted">
                 © {new Date().getFullYear()}{" "}
                 <a
-                  className="font-weight-bold ml-1"
+                  className="ml-1 text-muted"
                   href="https://www.creative-tim.com?ref=njsad-auth-footer"
                   target="_blank"
                 >
-                  Creative Tim
+                  stateless
                 </a>
               </div>
             </Col>
@@ -29,7 +29,7 @@ function Login() {
                     href="https://www.creative-tim.com?ref=njsad-auth-footer"
                     target="_blank"
                   >
-                    Creative Tim
+                    Discord
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -53,7 +53,7 @@ function Login() {
                     href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md?ref=njsad-auth-footer"
                     target="_blank"
                   >
-                    MIT License
+                    Terms of Service
                   </NavLink>
                 </NavItem>
               </Nav>

@@ -142,7 +142,12 @@ $theme-colors: map-merge((
   "white":        $white,
   "neutral":      $white,
   "dark":         $dark,
-  "darker":       $darker
+  "darker":       $darker,
+  "sl-red-dark": $sl-red-dark,
+  "sl-red-light": $sl-red-light,
+  "sl-red-xlight": $sl-red-xlight,
+  "sl-blue-dark": $sl-blue-dark,
+  "sl-blue-light": $sl-blue-light,
 ), $theme-colors);
 
 $brand-colors: () !default;
@@ -155,7 +160,12 @@ $brand-colors: map-merge((
   "youtube":      $youtube,
   "slack":        $slack,
   "dribbble":     $dribbble,
-  "github":       $github
+  "github":       $github,
+  "sl-red-dark": $sl-red-dark,
+  "sl-red-light": $sl-red-light,
+  "sl-red-xlight": $sl-red-xlight,
+  "sl-blue-dark": $sl-blue-dark,
+  "sl-blue-light": $sl-blue-light,
 ), $brand-colors);
 
 $shape-colors: () !default;
@@ -165,6 +175,11 @@ $shape-colors: map-merge((
   "secondary":    #24b47e,
   "neutral":      #e9ecef,
   "blue-gray":    #b2cbe1,
+  "sl-red-dark": $sl-red-dark,
+  "sl-red-light": $sl-red-light,
+  "sl-red-xlight": $sl-red-xlight,
+  "sl-blue-dark": $sl-blue-dark,
+  "sl-blue-light": $sl-blue-light,
 
 ), $shape-colors);
 
