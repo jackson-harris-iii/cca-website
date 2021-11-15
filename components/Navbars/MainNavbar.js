@@ -17,7 +17,7 @@ import {
 const MainNavbar = () => {
   return (
     <>
-      <Navbar className="navbar-top navbar-horizontal navbar-dark" expand="md">
+      <Navbar className="navbar-top navbar-horizontal navbar-dark bg-darker" expand="md">
         <Container className="px-4">
           <Link href="/admin/dashboard">
             <Row className="align-items-center">

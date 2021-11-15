@@ -47,7 +47,6 @@ function Auth(props) {
   }, []);
   return (
     <>
-      <div className="main-content">
         <MainNavbar />
         {/* Hero section */}
         <section className="header bg-gradient2-sl-red-dark py-7 py-lg-8">
@@ -107,6 +106,7 @@ function Auth(props) {
             </svg>
           </div>
         </section>
+      <div className="main-content container-fluid">
 
         {/* about - blue content section */}
         <section className="pt-5 pb-5">
@@ -213,7 +213,7 @@ function Auth(props) {
          <section className="pt-5 pb-5">
           {/* <Row className="bg-sl-blue-dark justify-content-center mt-5">{props.children}</Row> */}
 
-          <Row className="bg-gradient2-sl-red-light">
+          <Row className="bg-gradient2-sl-red-light container-fluid" style={{width: '100vw'}}>
           <Container className="header-body my-5">
             <Row className="align-items-center justify-content-center">
 
@@ -226,7 +226,7 @@ function Auth(props) {
               <Row className="justify-content-around align-items-center">
                 {/* percetage block */}
                 <Col xs="3" className="align-middle">
-                  <Card className="py-4 text-center display-2 text-sl-red-xlight">
+                  <Card className="py-4 text-center display-3 text-sl-red-xlight">
                     20%
                   </Card>
                 </Col>
@@ -243,7 +243,7 @@ function Auth(props) {
               <Row className="justify-content-around align-items-center">
                 {/* percetage block */}
                 <Col xs="3" className="align-middle">
-                  <Card className="py-4 text-center display-2 text-sl-red-xlight">
+                  <Card className="py-4 text-center display-3 text-sl-red-xlight">
                     50%
                   </Card>
                 </Col>
@@ -260,7 +260,7 @@ function Auth(props) {
               <Row className="justify-content-around align-items-center">
                 {/* percetage block */}
                 <Col xs="3" className="align-middle">
-                  <Card className="py-4 text-center display-2 text-sl-red-xlight">
+                  <Card className="py-4 text-center display-3 text-sl-red-xlight">
                     80%
                   </Card>
                 </Col>
@@ -277,7 +277,7 @@ function Auth(props) {
               <Row className="justify-content-around align-items-center">
                 {/* percetage block */}
                 <Col xs="3" className="align-middle">
-                  <Card className="py-4 text-center display-2 text-sl-red-xlight">
+                  <Card className="py-4 text-center display-3 text-sl-red-xlight">
                     90%
                   </Card>
                 </Col>
@@ -294,15 +294,15 @@ function Auth(props) {
               <Row className="justify-content-around align-items-center">
                 {/* percetage block */}
                 <Col xs="3" className="align-middle">
-                  <Card className="py-4 text-center display-2 text-sl-red-xlight">
-                    100% 🎉
+                  <Card className="py-4 text-center display-3 text-sl-red-xlight">
+                    100%
                   </Card>
                 </Col>
 
                 {/* Right hero text block */}
                 <Col xs="9" className="align-middle">
                   <p className="text-start text-light lead">
-                  The Doge Pound is 10,000 art pieces carefully chosen by Professor Elon. A unique digital collection of diverse NFTs lying on Ethereum Blockchain. Each one is thoughtfully designed, specifically picked, and impeccably shaped.
+                  🎉 The Doge Pound is 10,000 art pieces carefully chosen by Professor Elon. A unique digital collection of diverse NFTs lying on Ethereum Blockchain. Each one is thoughtfully designed, specifically picked, and impeccably shaped.🎉
                   </p>
                 </Col>
               </Row>
@@ -331,7 +331,7 @@ function Auth(props) {
         </section>
 
         {/* team - blue content section */}
-        <section className="pt-5 pb-5">
+        <section className="pb-5">
           {/* <Row className="bg-sl-blue-dark justify-content-center mt-5">{props.children}</Row> */}
 
           <Row className="bg-sl-blue-dark">
