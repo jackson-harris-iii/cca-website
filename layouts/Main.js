@@ -311,14 +311,14 @@ function Main(props) {
                         <Button
                           className="btn-icon-only rounded-circle"
                           color="primary"
-                          href="javascript:;"
+                          href="https://www.linkedin.com/in/jacksonharris3/"
                         >
                           <i className="fab fa-linkedin"></i>
                         </Button>
                         <Button
                           className="btn-icon-only rounded-circle"
                           color="github"
-                          href="javascript:;"
+                          href="https://github.com/jackson-harris-iii"
                         >
                           <i className="fab fa-github"></i>
                         </Button>
