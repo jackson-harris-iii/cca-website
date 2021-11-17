@@ -16,7 +16,7 @@ import {
   Col,
 } from "reactstrap";
 // layout for this page
-import Auth from "layouts/Auth.js";
+import Main from "layouts/Main.js";
 
 function Login() {
   return (
@@ -40,6 +40,6 @@ function Login() {
   );
 }
 
-Login.layout = Auth;
+Login.layout = Main;
 
 export default Login;

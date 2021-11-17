@@ -16,7 +16,7 @@ import {
   Col,
 } from "reactstrap";
 // layout for this page
-import Auth from "layouts/Auth.js";
+import Main from "layouts/Main.js";
 
 function Register() {
   return (
@@ -142,6 +142,6 @@ function Register() {
   );
 }
 
-Register.layout = Auth;
+Register.layout = Main;
 
 export default Register;
