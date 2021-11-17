@@ -118,7 +118,7 @@ const TeamSection = () => (
                       <img
                         alt="..."
                         className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                        src={require("assets/img/jason_simms.png")}
+                        src={require("assets/img/jason.png")}
                         style={imgStyle}
                       ></img>
                     </a>
