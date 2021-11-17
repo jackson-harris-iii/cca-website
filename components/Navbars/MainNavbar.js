@@ -47,9 +47,10 @@ const MainNavbar = () => {
                   <Link href="/admin/dashboard">
                     <img
                       alt="..."
-                      src={require("assets/img/brand/nextjs_argon_black.png")}
+                      src={require("assets/img/cca-logo.png")}
                     />
                   </Link>
+                  <span className="ml-2 text-darker">Crypto Choice Awards</span>
                 </Col>
                 <Col className="collapse-close" xs="6">
                   <button className="navbar-toggler" id="navbar-collapse-main">

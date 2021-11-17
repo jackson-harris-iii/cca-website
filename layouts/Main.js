@@ -328,6 +328,53 @@ function Main(props) {
                 </Card>
               </Col>
 
+              {/* Jason */}
+              <Col xs="6" md="3" className="mb-3">
+                <Card color="darker">
+                  <CardBody>
+                    <a href="javascript:;">
+                      <img
+                        alt="..."
+                        className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                        src={require("assets/img/jason_simms.png")}
+                        style={imgStyle}
+                      ></img>
+                    </a>
+                    <div className="pt-4 text-center">
+                      <h5 className="h3 title">
+                        <span className="d-block mb-1 text-sl-red-xlight">Jason</span>
+                        <small className="h4 font-weight-light text-muted">
+                          public relations
+                        </small>
+                      </h5>
+                      <div className="mt-3">
+                        <Button
+                          className="btn-icon-only rounded-circle"
+                          color="twitter"
+                          href="javascript:;"
+                        >
+                          <i className="fab fa-twitter"></i>
+                        </Button>
+                        <Button
+                          className="btn-icon-only rounded-circle"
+                          color="secondary"
+                          href="javascript:;"
+                        >
+                          <i className="fa fa-globe"></i>
+                        </Button>
+                        <Button
+                          className="btn-icon-only rounded-circle"
+                          color="primary"
+                          href=""
+                        >
+                          <i className="fab fa-linkedin"></i>
+                        </Button>
+                      </div>
+                    </div>
+                  </CardBody>
+                </Card>
+              </Col>
+
                {/* Elevated Design */}
                <Col xs="6" md="3" className="mb-3">
                 <Card color="darker">
@@ -375,52 +422,6 @@ function Main(props) {
                 </Card>
               </Col>
 
-               {/* Jackson */}
-               {/* <Col xs="6" md="3" className="mb-3">
-                <Card color="darker">
-                  <CardBody>
-                    <a href="javascript:;">
-                      <img
-                        alt="..."
-                        className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                        src={require("assets/img/me.jpg")}
-                        style={imgStyle}
-                      ></img>
-                    </a>
-                    <div className="pt-4 text-center">
-                      <h5 className="h3 title">
-                        <span className="d-block mb-1 text-sl-red-xlight">Jackson</span>
-                        <small className="h4 font-weight-light text-muted">
-                          founder | developer
-                        </small>
-                      </h5>
-                      <div className="mt-3">
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="twitter"
-                          href="javascript:;"
-                        >
-                          <i className="fab fa-twitter"></i>
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="instagram"
-                          href="javascript:;"
-                        >
-                          <i className="fab fa-instagram"></i>
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="github"
-                          href="javascript:;"
-                        >
-                          <i className="fab fa-github"></i>
-                        </Button>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-              </Col> */}
             </Row>
           </Container>
           </Row>
