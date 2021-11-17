@@ -17,7 +17,7 @@ import {
   Container
 } from "reactstrap";
 // layout for this page
-import Auth from "layouts/Auth.js";
+import Main from "layouts/Main.js";
 
 const HomePage = () =>  {
   return (
@@ -25,7 +25,7 @@ const HomePage = () =>  {
   );
 }
 
-HomePage.layout = Auth;
+HomePage.layout = Main;
 
 export default HomePage;
 
