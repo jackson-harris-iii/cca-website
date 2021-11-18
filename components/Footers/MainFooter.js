@@ -4,7 +4,7 @@ import React from "react";
 // reactstrap components
 import { NavItem, NavLink, Nav, Container, Row, Col } from "reactstrap";
 
-function Login() {
+function MainFooter() {
   return (
     <>
       <footer className="py-5 bg-darker">
@@ -24,38 +24,38 @@ function Login() {
             </Col>
             <Col xl="6">
               <Nav className="nav-footer justify-content-center justify-content-xl-end">
-                <NavItem>
+                {/* <NavItem>
                   <NavLink
                     href="https://www.creative-tim.com?ref=njsad-auth-footer"
                     target="_blank"
                   >
                     Discord
                   </NavLink>
-                </NavItem>
-                <NavItem>
+                </NavItem> */}
+                {/* <NavItem>
                   <NavLink
                     href="https://www.creative-tim.com/presentation?ref=njsad-auth-footer"
                     target="_blank"
                   >
                     About Us
                   </NavLink>
-                </NavItem>
-                <NavItem>
+                </NavItem> */}
+                {/* <NavItem>
                   <NavLink
                     href="http://blog.creative-tim.com?ref=njsad-auth-footer"
                     target="_blank"
                   >
-                    Blog
+                    Contact
                   </NavLink>
-                </NavItem>
-                <NavItem>
+                </NavItem> */}
+                {/* <NavItem>
                   <NavLink
                     href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md?ref=njsad-auth-footer"
                     target="_blank"
                   >
                     Terms of Service
                   </NavLink>
-                </NavItem>
+                </NavItem> */}
               </Nav>
             </Col>
           </Row>
@@ -65,4 +65,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default MainFooter;

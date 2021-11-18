@@ -5,7 +5,7 @@ import { UncontrolledCarousel, Container, Row, Col, Card, CardBody, CardHeader, 
 const imgStyle = { width: "140px" };
 
 const TeamSection = () => (
-  <section className="pb-5">
+  <section className="pb-5" id="team">
           {/* <Row className="bg-sl-blue-dark justify-content-center mt-5">{props.children}</Row> */}
 
           <Row className="bg-sl-blue-dark">
@@ -14,53 +14,6 @@ const TeamSection = () => (
 
               <Col lg="12" className="white text-center">
                 <h2 className="display-2 text-white bolder mb-3">Team</h2>
-              </Col>
-
-              {/* Sequoia Slentz */}
-              <Col xs="6" md="3" className="mb-3">
-                <Card color="darker">
-                  <CardBody>
-                    <a href="javascript:;">
-                      <img
-                        alt="..."
-                        className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                        src={require("assets/img/sequoia2.jpg")}
-                        style={imgStyle}
-                      ></img>
-                    </a>
-                    <div className="pt-4 text-center">
-                      <h5 className="h3 title">
-                        <span className="d-block mb-1 text-sl-red-xlight">Sequoia</span>
-                        <small className="h4 font-weight-light text-muted">
-                          marketing | philanthropy
-                        </small>
-                      </h5>
-                      <div className="mt-3">
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="twitter"
-                          href="https://twitter.com/sequoiaslentz" target="blank"
-                        >
-                          <i className="fab fa-twitter"></i>
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="youtube"
-                          href="https://youtu.be/fyT1bVoWUUo" target="blank"
-                        >
-                          <i className="fab fa-youtube"></i>
-                        </Button>
-                        {/* <Button
-                          className="btn-icon-only rounded-circle"
-                          color="primary"
-                          href="javascript:;" target="blank"
-                        >
-                          <i className="fab fa-linkedin"></i>
-                        </Button> */}
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
               </Col>
 
               {/* Jackson */}
@@ -79,7 +32,7 @@ const TeamSection = () => (
                       <h5 className="h3 title">
                         <span className="d-block mb-1 text-sl-red-xlight">Jackson</span>
                         <small className="h4 font-weight-light text-muted">
-                          developer | web3
+                          Founder | Developer | Web3
                         </small>
                       </h5>
                       <div className="mt-3">
@@ -118,7 +71,7 @@ const TeamSection = () => (
                       <img
                         alt="..."
                         className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                        src={require("assets/img/jason.png")}
+                        src={require("assets/img/jason2.jpg")}
                         style={imgStyle}
                       ></img>
                     </a>
@@ -126,7 +79,7 @@ const TeamSection = () => (
                       <h5 className="h3 title">
                         <span className="d-block mb-1 text-sl-red-xlight">Jason</span>
                         <small className="h4 font-weight-light text-muted">
-                          public relations
+                          Founder | Public Relations
                         </small>
                       </h5>
                       <div className="mt-3">
@@ -157,6 +110,53 @@ const TeamSection = () => (
                 </Card>
               </Col>
 
+              {/* Sequoia */}
+              <Col xs="6" md="3" className="mb-3">
+                <Card color="darker">
+                  <CardBody>
+                    <a href="javascript:;">
+                      <img
+                        alt="..."
+                        className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                        src={require("assets/img/sequoia2.jpg")}
+                        style={imgStyle}
+                      ></img>
+                    </a>
+                    <div className="pt-4 text-center">
+                      <h5 className="h3 title">
+                        <span className="d-block mb-1 text-sl-red-xlight">Sequoia</span>
+                        <small className="h4 font-weight-light text-muted">
+                          Founder | Marketing | Philanthropy
+                        </small>
+                      </h5>
+                      <div className="mt-3">
+                        <Button
+                          className="btn-icon-only rounded-circle"
+                          color="twitter"
+                          href="https://twitter.com/sequoiaslentz" target="blank"
+                        >
+                          <i className="fab fa-twitter"></i>
+                        </Button>
+                        <Button
+                          className="btn-icon-only rounded-circle"
+                          color="youtube"
+                          href="https://youtu.be/fyT1bVoWUUo" target="blank"
+                        >
+                          <i className="fab fa-youtube"></i>
+                        </Button>
+                        {/* <Button
+                          className="btn-icon-only rounded-circle"
+                          color="primary"
+                          href="javascript:;" target="blank"
+                        >
+                          <i className="fab fa-linkedin"></i>
+                        </Button> */}
+                      </div>
+                    </div>
+                  </CardBody>
+                </Card>
+              </Col>
+
               {/* Brian */}
               <Col xs="6" md="3" className="mb-3">
                 <Card color="darker">
@@ -173,7 +173,7 @@ const TeamSection = () => (
                       <h5 className="h3 title">
                         <span className="d-block mb-1 text-sl-red-xlight">Brian</span>
                         <small className="h4 font-weight-light text-muted">
-                          artist
+                          Artist
                         </small>
                       </h5>
                       <div className="mt-3">
@@ -213,7 +213,7 @@ const TeamSection = () => (
                     <h5 className="h3 title">
                       <span className="d-block mb-1 text-sl-red-xlight">Elevated Design</span>
                       <small className="h4 font-weight-light text-muted">
-                        digital artist
+                        Digital Artist
                       </small>
                     </h5>
                     <div className="mt-3">
@@ -246,7 +246,7 @@ const TeamSection = () => (
                       <h5 className="h3 title">
                         <span className="d-block mb-1 text-sl-red-xlight">Darragh</span>
                         <small className="h4 font-weight-light text-muted">
-                          musician
+                          Musician
                         </small>
                       </h5>
                       <div className="mt-3">

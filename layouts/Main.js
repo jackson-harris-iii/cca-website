@@ -1,16 +1,18 @@
-import React from "react";
+import React, {useEffect, useRef, useState} from "react";
 // reactstrap components
-import { UncontrolledCarousel, Container, Row, Col, Card, CardBody, CardHeader, Button, Collapse } from "reactstrap";
+import { UncontrolledCarousel, Container, Row, Col, Card, CardBody, CardHeader, Button, Collapse, Modal, ModalBody, ModalFooter, Input  } from "reactstrap";
 
 import Link from 'next/link'
+import { useForm, ValidationError } from '@formspree/react';
 
 // core components
 import MainNavbar from "components/Navbars/MainNavbar.js";
-import AuthFooter from "components/Footers/AuthFooter.js";
+import MainFooter from "components/Footers/MainFooter.js";
 // import {LaunchSection, Timeline, TeamSection } from "components/MainSections"
 import Timeline from "components/MainSections/Timeline.js"
 import LaunchSection from "components/MainSections/LaunchSection.js"
 import TeamSection from "components/MainSections/TeamSection.js"
+import ContactModal from "components/ContactModal.js"
 
 import routes from "routes.js";
 
@@ -43,10 +45,24 @@ const items = [
 const faqCardStyle = { width: "85%" }
 
 function Main(props) {
-  const [openedCollapse, setOpenedCollapse] = React.useState(null);
-  const [openedCollapse2, setOpenedCollapse2] = React.useState(null);
-  const [openedCollapse3, setOpenedCollapse3] = React.useState(null);
-  React.useEffect(() => {
+  const [openedCollapse, setOpenedCollapse] = useState(null);
+  const [openedCollapse2, setOpenedCollapse2] = useState(null);
+  const [openedCollapse3, setOpenedCollapse3] = useState(null);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [contactSucceess, setContactSuccess] = useState(false);
+
+  // const myRef = useRef(null)
+  const executeScroll = () => myRef.current.scrollIntoView()
+
+  const [contactSubmit, handleSubmit] = useForm("mleaqzba");
+
+  useEffect(() => {
+    if (contactSubmit.succeeded) {
+      setContactSuccess(true);
+    }
+  }, [contactSubmit])
+
+  useEffect(() => {
     document.body.classList.add("bg-sl-blue-dark");
     // Specify how to clean up after this effect:
     return function cleanup() {
@@ -55,9 +71,9 @@ function Main(props) {
   }, []);
   return (
     <>
-        <MainNavbar />
+        <MainNavbar scroll={executeScroll} isOpen={modalOpen} setModalOpen={setModalOpen}/>
         {/* Hero section */}
-        <section className="header bg-gradient2-sl-red-dark py-7 py-lg-8">
+        <section className="header bg-gradient2-sl-red-dark pt-5 pt-lg-6 pb-7 pb-lg-8">
           <Container>
             <div className="header-body">
               <Row className="align-items-center justify-content-center">
@@ -71,25 +87,22 @@ function Main(props) {
                 <Col lg="5" md="6" className="align-middle">
                 <h2 className="display-4 text-white">What are the Crypto Choice Awards? 🤔</h2>
                   <p className="text-start text-light lead">
-                  The Crypto Choice Awards are a first-of-its-kind decentralized award program for cryptocurrency influencers powered by NFTs and benefiting nonprofits. In this augural year, we are recognizing the top crypto YouTubers based solely on the number of views their channels have received over the past year with a series of NFTs derived from custom oil paintings of the honorees. In future years, token holders will vote to shape the program and choose the winners as well as the causes our DAO supports.
+                  The Crypto Choice Awards are a first-of-its-kind decentralized award program for cryptocurrency influencers powered by NFTs and benefiting nonprofits. In this inaugural year, we are recognizing the top crypto YouTubers based solely on the number of views their channels have received over the past year with a series of NFTs derived from custom oil paintings of the honorees. In future years, token holders will vote to shape the program and choose the winners as well as the causes our DAO supports.
                   </p>
-                  {/* <Container>
+                  <Container>
                     <Row className="justify-content-center mt-4">
-                      <Button color="primary"><i className="fab fa-discord 2x"></i> Discord</Button>
-                      <Button className='text-sl-blue-light'><i class="fas fa-ship"></i> Opensea</Button>
+                      {/* <Button color="primary"><i className="fab fa-discord 2x"></i> Discord</Button>
+                      <Button className='text-sl-blue-light'><i class="fas fa-ship"></i> Opensea</Button> */}
+
+                      <Button className='' color="twitter" href="https://twitter.com/thecryptochoice" target="blank"><i className="fab fa-twitter"></i> Follow us on Twitter!</Button>
                     </Row>
-                  </Container> */}
+                  </Container>
                 </Col>
 
                 {/* Right Hero text block */}
                 <Col lg="5" md="6" className="mt-4">
-                  <Card className="pt-4 pb-5">
-                      {/* <img
-                      alt="..."
-                      src={require("assets/img/sil1.png")}
-                      /> */}
-
-                      <UncontrolledCarousel controls={false} items={items} indicators={false} cassModule={{maxHeight: "393px", backgroundColor: "transparent"}}/>
+                  <Card className="pt-4 pb-5 bg-darker">
+                    <UncontrolledCarousel controls={false} items={items} indicators={false} cassModule={{maxHeight: "393px", backgroundColor: "transparent"}}/>
                   </Card>
                 </Col>
               </Row>
@@ -117,7 +130,7 @@ function Main(props) {
       <div className="main-content container-fluid">
 
         {/* about - blue content section */}
-        <section className="pt-5 pb-5">
+        <section className="pt-5 pb-5" id="about">
           {/* <Row className="bg-sl-blue-dark justify-content-center mt-5">{props.children}</Row> */}
 
           <Row className="bg-sl-blue-dark">
@@ -126,12 +139,13 @@ function Main(props) {
             <Row className="align-items-center justify-content-center">
 
                {/* Left Hero text block */}
-               <Col lg="5" md="6">
-                <Card className="pt-4 pb-5">
+               <Col lg="5" md="6" className="mt-4">
+                <Card className="pt-4 pb-5 bg-darker">
                     <img
                     alt="..."
-                    style={{maxHeight: "393px", backgroundColor: "transparent"}}
+                    style={{backgroundColor: "transparent"}}
                     src={require("assets/img/sil2.png")}
+                    className="img-fluid"
                     />
                 </Card>
               </Col>
@@ -184,11 +198,12 @@ function Main(props) {
 
                {/* Right Hero text block */}
                <Col lg="5" md="6">
-                <Card className="pt-4 pb-5">
+                <Card className="pt-4 pb-5 bg-darker">
                     <img
                     alt="..."
-                    style={{maxHeight: "393px", backgroundColor: "transparent"}}
+                    style={{backgroundColor: "transparent"}}
                     src={require("assets/img/sil3.png")}
+                    className="img-fluid"
                     />
                 </Card>
               </Col>
@@ -342,7 +357,64 @@ function Main(props) {
         </section>
       </div>
 
-      <AuthFooter />
+      <MainFooter />
+      {/* <ContactModal isOpen={modalOpen} setModalOpen={setModalOpen}/> */}
+
+      <Modal toggle={() => setModalOpen(!modalOpen)} isOpen={modalOpen}>
+        <div className="mt-4">
+          <Row className="align-items-center">
+            <Col className="col-12">
+              <div className=" display-4 text-center text-darker">
+                Contact Form
+              </div>
+            </Col>
+          </Row>
+        </div>
+        <ModalBody>
+          {
+            contactSucceess
+            ? <p>Thanks for your submission!</p>
+            :
+            <form onSubmit={handleSubmit}>
+              <label htmlFor="email" className="text-darker">
+                Email Address
+              </label>
+              <Input
+                id="email"
+                type="email"
+                name="email"
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={contactSubmit.errors}
+              />
+              {/* <textarea
+                id="message"
+                name="message"
+              /> */}
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={contactSubmit.errors}
+              />
+              <ModalFooter>
+                <Button color="sl-blue-light" className="mt-2" type="submit" disabled={contactSubmit.submitting}>
+                  Submit
+                </Button>
+                <Button
+                  color="secondary"
+                  type="button"
+                  onClick={() => setModalOpen(!modalOpen)}
+                >
+                  Close
+                </Button>
+              </ModalFooter>
+            </form>
+          }
+        </ModalBody>
+
+      </Modal>
     </>
   );
 }

@@ -23,7 +23,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body>
+        <body style={{scrollBehavior: 'smooth'}}>
           <div id="page-transition"></div>
           <Main />
           <NextScript />
