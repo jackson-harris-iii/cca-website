@@ -39,31 +39,31 @@ const TeamSection = () => (
                         <Button
                           className="btn-icon-only rounded-circle"
                           color="twitter"
-                          href="javascript:;"
+                          href="https://twitter.com/sequoiaslentz" target="blank"
                         >
                           <i className="fab fa-twitter"></i>
                         </Button>
                         <Button
                           className="btn-icon-only rounded-circle"
                           color="youtube"
-                          href="https://www.youtube.com/watch?v=3LdNZ4VWzzg&t=1s"
+                          href="https://youtu.be/fyT1bVoWUUo" target="blank"
                         >
                           <i className="fab fa-youtube"></i>
                         </Button>
-                        <Button
+                        {/* <Button
                           className="btn-icon-only rounded-circle"
                           color="primary"
-                          href="javascript:;"
+                          href="javascript:;" target="blank"
                         >
                           <i className="fab fa-linkedin"></i>
-                        </Button>
+                        </Button> */}
                       </div>
                     </div>
                   </CardBody>
                 </Card>
               </Col>
 
-              {/* Jackson Harris III*/}
+              {/* Jackson */}
               <Col xs="6" md="3" className="mb-3">
                 <Card color="darker">
                   <CardBody>
@@ -77,30 +77,30 @@ const TeamSection = () => (
                     </a>
                     <div className="pt-4 text-center">
                       <h5 className="h3 title">
-                        <span className="d-block mb-1 text-sl-red-xlight">Jackson Harris III</span>
+                        <span className="d-block mb-1 text-sl-red-xlight">Jackson</span>
                         <small className="h4 font-weight-light text-muted">
                           developer | web3
                         </small>
                       </h5>
                       <div className="mt-3">
-                        <Button
+                        {/* <Button
                           className="btn-icon-only rounded-circle"
                           color="twitter"
-                          href="javascript:;"
+                          href="javascript:;" target="blank"
                         >
                           <i className="fab fa-twitter"></i>
-                        </Button>
+                        </Button> */}
                         <Button
                           className="btn-icon-only rounded-circle"
                           color="primary"
-                          href="https://www.linkedin.com/in/jacksonharris3/"
+                          href="https://www.linkedin.com/in/jacksonharris3/" target="blank"
                         >
                           <i className="fab fa-linkedin"></i>
                         </Button>
                         <Button
                           className="btn-icon-only rounded-circle"
                           color="github"
-                          href="https://github.com/jackson-harris-iii"
+                          href="https://github.com/jackson-harris-iii" target="blank"
                         >
                           <i className="fab fa-github"></i>
                         </Button>
@@ -133,21 +133,21 @@ const TeamSection = () => (
                         <Button
                           className="btn-icon-only rounded-circle"
                           color="twitter"
-                          href="javascript:;"
+                          href="https://twitter.com/simmantics" target="blank"
                         >
                           <i className="fab fa-twitter"></i>
                         </Button>
                         <Button
                           className="btn-icon-only rounded-circle"
                           color="secondary"
-                          href="javascript:;"
+                          href="https://www.simmspr.com/" target="blank"
                         >
                           <i className="fa fa-globe"></i>
                         </Button>
                         <Button
                           className="btn-icon-only rounded-circle"
                           color="primary"
-                          href=""
+                          href="https://www.linkedin.com/in/jasonsimms/" target="blank"
                         >
                           <i className="fab fa-linkedin"></i>
                         </Button>
@@ -179,24 +179,17 @@ const TeamSection = () => (
                       <div className="mt-3">
                         <Button
                           className="btn-icon-only rounded-circle"
-                          color="twitter"
-                          href="javascript:;"
+                          color="secondary"
+                          href="http://brianoart.com/" target="blank"
                         >
-                          <i className="fab fa-twitter"></i>
+                          <i className="fa fa-globe"></i>
                         </Button>
                         <Button
                           className="btn-icon-only rounded-circle"
                           color="instagram"
-                          href="javascript:;"
+                          href="https://instagram.com/brian_manning_art" target="blank"
                         >
                           <i className="fab fa-instagram"></i>
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="primary"
-                          href=""
-                        >
-                          <i className="fab fa-linkedin"></i>
                         </Button>
                       </div>
                     </div>
@@ -204,46 +197,65 @@ const TeamSection = () => (
                 </Card>
               </Col>
 
-               {/* Elevated Design */}
-               <Col xs="6" md="3" className="mb-3">
+              {/* Elevated Design */}
+              <Col xs="6" md="3" className="mb-3">
+              <Card color="darker">
+                <CardBody>
+                  <a href="javascript:;">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                      src={require("assets/img/amadeus.jpg")}
+                      style={imgStyle}
+                    ></img>
+                  </a>
+                  <div className="pt-4 text-center">
+                    <h5 className="h3 title">
+                      <span className="d-block mb-1 text-sl-red-xlight">Elevated Design</span>
+                      <small className="h4 font-weight-light text-muted">
+                        digital artist
+                      </small>
+                    </h5>
+                    <div className="mt-3">
+                      <Button
+                        className="btn-icon-only rounded-circle"
+                        color="primary"
+                        href="https://www.linkedin.com/in/amadeus-tafoya-565738226"
+                      >
+                        <i className="fab fa-linkedin"></i>
+                      </Button>
+                    </div>
+                  </div>
+                </CardBody>
+              </Card>
+              </Col>
+
+              {/* Darragh */}
+              <Col xs="6" md="3" className="mb-3">
                 <Card color="darker">
                   <CardBody>
                     <a href="javascript:;">
                       <img
                         alt="..."
                         className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                        src={require("assets/img/amadeus.jpg")}
+                        src={require("assets/img/darragh.jpg")}
                         style={imgStyle}
                       ></img>
                     </a>
                     <div className="pt-4 text-center">
                       <h5 className="h3 title">
-                        <span className="d-block mb-1 text-sl-red-xlight">Elevated Design</span>
+                        <span className="d-block mb-1 text-sl-red-xlight">Darragh</span>
                         <small className="h4 font-weight-light text-muted">
-                          digital artist
+                          musician
                         </small>
                       </h5>
                       <div className="mt-3">
                         <Button
                           className="btn-icon-only rounded-circle"
-                          color="twitter"
-                          href="javascript:;"
+                          color="secondary"
+                          href="http://darraghoneill.com/" target="blank"
                         >
-                          <i className="fab fa-twitter"></i>
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="instagram"
-                          href="javascript:;"
-                        >
-                          <i className="fab fa-instagram"></i>
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="primary"
-                          href="https://www.linkedin.com/in/amadeus-tafoya-565738226"
-                        >
-                          <i className="fab fa-linkedin"></i>
+                          <i className="fa fa-globe"></i>
                         </Button>
                       </div>
                     </div>

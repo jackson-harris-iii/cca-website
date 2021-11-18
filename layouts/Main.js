@@ -2,6 +2,8 @@ import React from "react";
 // reactstrap components
 import { UncontrolledCarousel, Container, Row, Col, Card, CardBody, CardHeader, Button, Collapse } from "reactstrap";
 
+import Link from 'next/link'
+
 // core components
 import MainNavbar from "components/Navbars/MainNavbar.js";
 import AuthFooter from "components/Footers/AuthFooter.js";
@@ -23,14 +25,14 @@ const items = [
     key: "1",
   },
   {
-    src: require("assets/img/sil2.jpeg"),
+    src: require("assets/img/sil4.png"),
     altText: "Slide 2",
     caption: "",
     header: "",
     key: "2",
   },
   {
-    src: require("assets/img/sil3.jpeg"),
+    src: require("assets/img/sil5.png"),
     altText: "Slide 3",
     caption: "",
     header: "",
@@ -41,9 +43,9 @@ const items = [
 const faqCardStyle = { width: "85%" }
 
 function Main(props) {
-  const [openedCollapse, setOpenedCollapse] = React.useState("collapseOne");
-  const [openedCollapse2, setOpenedCollapse2] = React.useState("collapseTwo");
-  const [openedCollapse3, setOpenedCollapse3] = React.useState("collapseThree");
+  const [openedCollapse, setOpenedCollapse] = React.useState(null);
+  const [openedCollapse2, setOpenedCollapse2] = React.useState(null);
+  const [openedCollapse3, setOpenedCollapse3] = React.useState(null);
   React.useEffect(() => {
     document.body.classList.add("bg-sl-blue-dark");
     // Specify how to clean up after this effect:
@@ -69,27 +71,25 @@ function Main(props) {
                 <Col lg="5" md="6" className="align-middle">
                 <h2 className="display-4 text-white">What are the Crypto Choice Awards? 🤔</h2>
                   <p className="text-start text-light lead">
-                  Youtube is the primary source of information for much of the crypto space and the Top Crypto Youtubers should be recognized in a way that resembles the decentralized nature of the crypto space.  This year's winners are being awarded solely based on the number of views their channels have received over the past year and we know that a lot of people will have opinions about this which is why this community is being formed.
+                  The Crypto Choice Awards are a first-of-its-kind decentralized award program for cryptocurrency influencers powered by NFTs and benefiting nonprofits. In this augural year, we are recognizing the top crypto YouTubers based solely on the number of views their channels have received over the past year with a series of NFTs derived from custom oil paintings of the honorees. In future years, token holders will vote to shape the program and choose the winners as well as the causes our DAO supports.
                   </p>
-                  <Container>
+                  {/* <Container>
                     <Row className="justify-content-center mt-4">
                       <Button color="primary"><i className="fab fa-discord 2x"></i> Discord</Button>
                       <Button className='text-sl-blue-light'><i class="fas fa-ship"></i> Opensea</Button>
                     </Row>
-                  </Container>
+                  </Container> */}
                 </Col>
 
                 {/* Right Hero text block */}
                 <Col lg="5" md="6" className="mt-4">
-                  <Card className="py-5">
-                    <Card className="mx-4 shadow-lg">
+                  <Card className="pt-4 pb-5">
                       {/* <img
                       alt="..."
                       src={require("assets/img/sil1.png")}
                       /> */}
 
-                      <UncontrolledCarousel controls={false} items={items} indicators={false}/>
-                    </Card>
+                      <UncontrolledCarousel controls={false} items={items} indicators={false} cassModule={{maxHeight: "393px", backgroundColor: "transparent"}}/>
                   </Card>
                 </Col>
               </Row>
@@ -127,14 +127,12 @@ function Main(props) {
 
                {/* Left Hero text block */}
                <Col lg="5" md="6">
-                <Card className="py-5">
-                  <Card className="mx-4 shadow shadow-lg ">
+                <Card className="pt-4 pb-5">
                     <img
                     alt="..."
-                    style={{maxHeight: "393px"}}
-                    src={require("assets/img/sil2.jpeg")}
+                    style={{maxHeight: "393px", backgroundColor: "transparent"}}
+                    src={require("assets/img/sil2.png")}
                     />
-                  </Card>
                 </Card>
               </Col>
 
@@ -142,7 +140,7 @@ function Main(props) {
               <Col lg="5" md="6" className="align-middle">
                 <h2 className="display-4 text-white">How it works? 📝</h2>
                 <p className="text-start text-light lead">
-                Currently YouTube algorithms play a huge role in dictating which Crypto Youtubers have the most influence.  By holding one of our "free to mint" NFTs you will become an official member of our community with access to valuable privileges and the ability to vote on a myriad of different proposals such as but not limited to future categories, future winners and the best way to utilize the velocity income generated by the resale of these tokens.  Youtubers are pivotal in the dissemination of information in the Crypto space and if you believe that algorithms play too big of a role in determining which ones get the loudest voice, then please mint one of our free NFTs and help do something about it.  Who really is the best?  Let's let the people decide!
+                By holding one of our "free to mint" NFTs you will become an official member of the Crypto Choice Awards community (it’s like you’re part of the Academy for Motion Picture Awards, but for crypto!) with access to valuable privileges and the ability to vote on a myriad of different proposals such as future categories, future winners and how to utilize the velocity income generated by the resale of these tokens. Influencers are pivotal in the dissemination of information in the crypto space, and if you believe that algorithms play too big of a role in determining which ones get the loudest voice, then please mint one of our free NFTs and help do something about it. Who really is the best? Let's let the people decide!
                 </p>
               </Col>
 
@@ -180,20 +178,18 @@ function Main(props) {
               <Col lg="5" md="6" className="align-middle">
                 <h2 className="display-4 text-white">NFTs + Artwork 🎨</h2>
                 <p className="text-start text-light lead">
-                Series 1 is a collection of the Top 5 Crypto Youtubers by views.  Each YouTuber has a run of 2000 for a total of 10,000 NFTs.  They were created using oil portraits painted by Irish artist Brian Manning with various alterations done by Elevated Designs.  The actual physical oil paintings are the property of each respective YouTuber; many clever Easter Eggs and rarities have been randomly added with intention to some Tokens such as music by the world renowned classical guitarist and composer Darragh O'Neill.  These are NOT just a bunch of hastily thrown together graphic images that were made for the sole purpose of a cash grab like so many other current NFT projects.  Hundreds of hours of painstaking detail have gone into these unique pieces of digital art which serve as historical bookmarks in the YouTube Crypto space.
+                Series 1 is a collection of the Top 5 Crypto YouTubers by views over the past year.  Each honoree has a run of 2000 NFTs for a total of 10,000 NFTs in this inaugural run.  The NFTs are stunning works of art painted by Irish artist <Link href="http://brianoart.com/blog"><a target="blank">Brian Manning</a></Link> with variations created by <Link href="https://www.linkedin.com/in/amadeus-tafoya-565738226"><a target="blank">Elevated Designs.</a></Link> The physical oil paintings are the property of each respective honoree. Many clever easter eggs and rarities have been randomly added to some tokens such as music by the world-renowned classical guitarist and composer <Link href="http://darraghoneill.com/"><a target="blank">Darragh O'Neill.</a></Link> Hundreds of hours of painstaking detail have gone into these unique pieces of digital art which serve as historical bookmarks of the inaugural Crypto Choice Awards.
                 </p>
               </Col>
 
                {/* Right Hero text block */}
                <Col lg="5" md="6">
-                <Card className="py-5">
-                  <Card className="mx-4 shadow shadow-lg ">
+                <Card className="pt-4 pb-5">
                     <img
                     alt="..."
-                    style={{maxHeight: "393px"}}
-                    src={require("assets/img/sil3.jpeg")}
+                    style={{maxHeight: "393px", backgroundColor: "transparent"}}
+                    src={require("assets/img/sil3.png")}
                     />
-                  </Card>
                 </Card>
               </Col>
 
@@ -273,7 +269,7 @@ function Main(props) {
               </Card>
 
               {/* FAQ #2 */}
-              <Card style={faqCardStyle} color="sl-red-dark">
+              {/* <Card style={faqCardStyle} color="sl-red-dark">
                   <CardHeader
                     id="headingTwo"
                     aria-expanded={openedCollapse2 === "collapseTwo"}
@@ -304,10 +300,10 @@ function Main(props) {
                     Once minted, simply connect to your OpenSea account to view your NFTs.
                     </CardBody>
                   </Collapse>
-              </Card>
+              </Card> */}
 
               {/* FAQ #3 */}
-              <Card style={faqCardStyle} color="sl-red-dark">
+              {/* <Card style={faqCardStyle} color="sl-red-dark">
                   <CardHeader
                     id="headingOne"
                     aria-expanded={openedCollapse === "collapseOne"}
@@ -338,7 +334,7 @@ function Main(props) {
                     Once minted, simply connect to your OpenSea account to view your NFTs.
                     </CardBody>
                   </Collapse>
-              </Card>
+              </Card> */}
 
               </Row>
             </Container>
