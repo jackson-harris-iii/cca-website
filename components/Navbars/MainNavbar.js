@@ -71,7 +71,7 @@ const MainNavbar = ({scroll, setModalOpen, modalOpen}) => {
               </NavItem>
               <NavItem>
                 <Link href="">
-                  <NavLink href="#pablo" className="nav-link-icon">
+                  <NavLink href="#team" className="nav-link-icon">
                     <i className="ni ni-circle-08 text-sl-blue-light" />
                     <span className="nav-link-inner--text text-sl-blue-light">Team</span>
                   </NavLink>
