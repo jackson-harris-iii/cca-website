@@ -6,7 +6,7 @@ const Timeline = () => (
   <section className="pt-5 pb-5" id="roadmap">
   {/* <Row className="bg-sl-blue-dark justify-content-center mt-5">{props.children}</Row> */}
 
-  <Row className="bg-gradient2-sl-red-light container-fluid" style={{width: '100vw'}}>
+  <Row className="bg-gradient2-sl-red-light container-fluid shadow shadow-lg" style={{width: '100vw'}}>
   <Container className="header-body my-5">
     <Row className="align-items-center justify-content-center">
 
