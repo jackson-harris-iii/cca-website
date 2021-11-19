@@ -70,7 +70,7 @@ const MainNavbar = ({scroll, setModalOpen, modalOpen}) => {
                 </Link>
               </NavItem>
               <NavItem>
-                <Link href="">
+                <Link href="#team">
                   <NavLink href="#team" className="nav-link-icon">
                     <i className="ni ni-circle-08 text-sl-blue-light" />
                     <span className="nav-link-inner--text text-sl-blue-light">Team</span>
@@ -79,7 +79,7 @@ const MainNavbar = ({scroll, setModalOpen, modalOpen}) => {
               </NavItem>
               <NavItem>
                 <Link href="#roadmap">
-                  <NavLink href="#pablo" className="nav-link-icon">
+                  <NavLink href="#roadmap" className="nav-link-icon">
                     <i className="ni ni-key-25 text-sl-blue-light" />
                     <span className="nav-link-inner--text text-sl-blue-light">Roadmap</span>
                   </NavLink>

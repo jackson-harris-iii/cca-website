@@ -11,22 +11,22 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "assets/scss/nextjs-argon-dashboard.scss";
 import "assets/css/stateless.css"
 
-Router.events.on("routeChangeStart", (url) => {
-  console.log(`Loading: ${url}`);
-  document.body.classList.add("body-page-transition");
-  ReactDOM.render(
-    <PageChange path={url} />,
-    document.getElementById("page-transition")
-  );
-});
-Router.events.on("routeChangeComplete", () => {
-  ReactDOM.unmountComponentAtNode(document.getElementById("page-transition"));
-  document.body.classList.remove("body-page-transition");
-});
-Router.events.on("routeChangeError", () => {
-  ReactDOM.unmountComponentAtNode(document.getElementById("page-transition"));
-  document.body.classList.remove("body-page-transition");
-});
+// Router.events.on("routeChangeStart", (url) => {
+//   console.log(`Loading: ${url}`);
+//   document.body.classList.add("body-page-transition");
+//   ReactDOM.render(
+//     <PageChange path={url} />,
+//     document.getElementById("page-transition")
+//   );
+// });
+// Router.events.on("routeChangeComplete", () => {
+//   ReactDOM.unmountComponentAtNode(document.getElementById("page-transition"));
+//   document.body.classList.remove("body-page-transition");
+// });
+// Router.events.on("routeChangeError", () => {
+//   ReactDOM.unmountComponentAtNode(document.getElementById("page-transition"));
+//   document.body.classList.remove("body-page-transition");
+// });
 
 export default class MyApp extends App {
   componentDidMount() {

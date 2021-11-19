@@ -22,6 +22,23 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
             rel="stylesheet"
           />
+
+          <script
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+            strategy="afterInteractive"
+          />
+          <script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}, {
+                page_path: window.location.pathname,
+              }');
+            `}
+          </script>
+
         </Head>
         <body style={{scrollBehavior: 'smooth'}}>
           <div id="page-transition"></div>
