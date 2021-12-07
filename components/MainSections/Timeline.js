@@ -17,16 +17,16 @@ const Timeline = () => (
       <Col lg="8">
         <span className="display-4 text-white">November 2021</span><p className="display-5 text-white">Honorees notified</p>
         <br />
-        <span className="display-4 text-white">December 7, 2021</span>
+        <span className="display-4 text-white">January 7, 2021</span>
         <p className="display-5 text-white">Honorees announced</p>
         <br />
-        <span className="display-4 text-white">Jan 11th, 2022</span>
+        <span className="display-4 text-white">Febuary 11th, 2022</span>
         <p className="display-5 text-white">Whitelist minting open</p>
         <br />
-        <span className="display-4 text-white">Jan 13th, 2022</span>
+        <span className="display-4 text-white">Febuary 13th, 2022</span>
         <p className="display-5 text-white">Public minting open</p>
         <br />
-        <span className="display-4 text-white">Jan 17th, 2022</span>
+        <span className="display-4 text-white">Febuary 17th, 2022</span>
         <p className="display-5 text-white">NFT reveal</p>
         <br />
         <span className="display-4 text-white">March 31st, 2022 - Community vote on the "Unsung Heroes of Crypto."</span> <p className="text-white">This will be a limited series of NFTs created for the purpose of expanding our community and engaging in a discussion about who should be celebrated for helping move crypto forward.</p>
