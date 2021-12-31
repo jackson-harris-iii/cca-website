@@ -29,7 +29,6 @@ const Timeline = () => (
         <span className="display-4 text-white">March 3rd, 2022</span>
         <p className="display-5 text-white">NFT reveal</p>
         <br />
-        {/* <span className="display-4 text-white">March 31st, 2022 - Community vote on the "Unsung Heroes of Crypto."</span> <p className="text-white">This will be a limited series of NFTs created for the purpose of expanding our community and engaging in a discussion about who should be celebrated for helping move crypto forward.</p> */}
       </Col>
 
     </Row>
