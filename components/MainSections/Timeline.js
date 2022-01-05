@@ -17,7 +17,7 @@ const Timeline = () => (
       <Col lg="8">
         <span className="display-4 text-white">December 2021</span><p className="display-5 text-white">Honorees notified</p>
         <br />
-        <span className="display-4 text-white">January 25, 2021</span>
+        <span className="display-4 text-white">January 7, 2021</span>
         <p className="display-5 text-white">Honorees announced</p>
         <br />
         <span className="display-4 text-white">Febuary 25th, 2022</span>
