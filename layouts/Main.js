@@ -20,21 +20,21 @@ const imgStyle = { width: "140px" };
 
 const items = [
   {
-    src: require("assets/img/sil1.png"),
+    src: require("assets/img/bitboy.png"),
     altText: "Slide 1",
     caption: "",
     header: "",
     key: "1",
   },
   {
-    src: require("assets/img/sil4.png"),
+    src: require("assets/img/themoon.png"),
     altText: "Slide 2",
     caption: "",
     header: "",
     key: "2",
   },
   {
-    src: require("assets/img/sil5.png"),
+    src: require("assets/img/altcoin-daily.png"),
     altText: "Slide 3",
     caption: "",
     header: "",
@@ -144,7 +144,7 @@ function Main(props) {
                     <img
                     alt="..."
                     style={{backgroundColor: "transparent"}}
-                    src={require("assets/img/sil2.png")}
+                    src={require("assets/img/mmcrypto-laser.png")}
                     className="img-fluid"
                     />
                 </Card>
@@ -202,7 +202,7 @@ function Main(props) {
                     <img
                     alt="..."
                     style={{backgroundColor: "transparent"}}
-                    src={require("assets/img/sil3.png")}
+                    src={require("assets/img/CoinBeureau-Monopoly.png")}
                     className="img-fluid"
                     />
                 </Card>
@@ -240,7 +240,7 @@ function Main(props) {
 
         {/* faq - red content section */}
         <section>
-          <Row className="bg-sl-red-dark py-5">
+          <Row className="bg-darker py-5">
             <Container className="header-body">
               <Row className="align-items-center justify-content-center mb-5">
 
@@ -250,11 +250,11 @@ function Main(props) {
               </Col>
 
               {/* FAQ #1 */}
-              <Card style={faqCardStyle} color="sl-red-dark">
+              <Card style={faqCardStyle} color="bg-darker">
                   <CardHeader
                     id="headingOne"
                     aria-expanded={openedCollapse === "collapseOne"}
-                    className="bg-sl-red-dark"
+                    className="bg-darker"
                   >
                     <h5 className=" mb-0">
                       <Button
@@ -265,7 +265,7 @@ function Main(props) {
                               : "collapseOne"
                           )
                         }
-                        className=" w-100 text-white text-left bg-sl-red-dark"
+                        className=" w-100 text-white text-left bg-darker"
                       >
                         Where can I view my NFTs?
                       </Button>
@@ -277,7 +277,7 @@ function Main(props) {
                     data-parent="#accordionExample"
                     id="collapseOne"
                   >
-                    <CardBody className="opacity-8 text-white" color="sl-red-dark">
+                    <CardBody className="opacity-8" color="bg-darker">
                     Once minted, simply connect to your OpenSea account to view your NFTs.
                     </CardBody>
                   </Collapse>

@@ -19,7 +19,7 @@ const MainNavbar = ({scroll, setModalOpen, modalOpen}) => {
     <>
       <Navbar className="navbar-top navbar-horizontal navbar-dark bg-darker" expand="md">
         <Container className="px-4">
-          <Link href="/admin/dashboard">
+          <Link href="/">
             <Row className="align-items-center">
               <Col className="col-2">
                 <NavbarBrand>
@@ -31,9 +31,9 @@ const MainNavbar = ({scroll, setModalOpen, modalOpen}) => {
                 </NavbarBrand>
               </Col>
               <Col className="align-items-center">
-                <h3 className="text-white mt-2">
+                <h1 className="text-white mt-2">
                   Crypto Choice Awards
-                </h3>
+                </h1>
               </Col>
             </Row>
           </Link>

@@ -28,7 +28,7 @@ function Login() {
               <Card className="mx-4 shadow-lg ">
                 <img
                 alt="..."
-                src={require("assets/img/sil1.png")}
+                src={require("assets/img/bitboy.png")}
                 />
                </Card>
             </Card>
